@@ -1,0 +1,14 @@
+def race_reg(name,age,catergory):
+    for i in name:
+        if i.isalpha() or i.isspace():
+            age = int(age)
+        else:
+            return "Error in name input."
+    if age > 15 and age <= 75:
+        age = age
+    else:
+        return "Error in age values."
+    if catergory == "1" or catergory == "2" or catergory == "3":
+        return "Successfully registered."
+    else:
+        return "Error in race category input."
